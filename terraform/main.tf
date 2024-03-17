@@ -1,5 +1,5 @@
 provider "google" {
-  credentials = file("/home/linhares/projetos/athena_stack_infra/terraform/athena-417502-0c2da699abb0.json")
+  credentials = file("/home/athena-417502-0c2da699abb0.json")
   project     = "athena-417502"
   region      = "us-central1"
 }
