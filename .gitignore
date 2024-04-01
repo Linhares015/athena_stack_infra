@@ -1,0 +1,36 @@
+# Arquivos de log
+*.log
+
+# Diretório de dependências do Node.js
+node_modules/
+
+# Diretórios de build
+/build
+/dist
+
+# Arquivos de configuração sensíveis
+*.env
+
+# Diretório de pacotes do Python
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Arquivos de IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependências
+bower_components/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração de ferramentas de desenvolvimento
+/.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
