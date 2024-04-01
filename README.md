@@ -1,4 +1,4 @@
-# Projeto Athena - Evolução de uma Stack de Dados
+# Projeto Athena - Evolução de uma Stack de Dados 🧙‍♂️
 
 ## Stack Inicial
 
@@ -24,7 +24,7 @@ Apesar dessa ser na maioria das vezes a stack de dados inicial de muitas empresa
 
 - **Power Query como ferramenta de ingestão de dados**: O Power Query é uma ferramenta muito poderosa e versátil, mas não é a melhor ferramenta para a ingestão de dados. O Power Query não foi feito para lidar com grandes volumes de dados e não é uma ferramenta colaborativa.
 
-- **Power Query como ferramenta de transformação de dados**: Apesar de ter bastante poder de transformação de dados e ser fácil de usar, o Power Query não é a melhor ferramenta para a transformação de dados. O mesmo não foi feito para lidar com grandes volumes de dados além de não possuir versionamento de código, deixar todo o processo na ferraemnta e não permitir a reutilização de código. Tudo isso gera uma divida técnica muito grande, para o time de dados.
+- **Power Query como ferramenta de transformação de dados**: Apesar de ter bastante poder de transformação de dados e ser fácil de usar, o Power Query não é a melhor ferramenta para a transformação de dados. O mesmo não foi feito para lidar com grandes volumes de dados além de não possuir versionamento de código, deixar todo o processo na ferramenta e não permitir a reutilização de código. Tudo isso gera uma divida técnica muito grande, para o time de dados.
 
 - **Power Query como ferramenta de carga de dados**: O Power Query não é a melhor ferramenta para a carga de dados.
 
@@ -70,3 +70,9 @@ A stack de dados evoluída possui várias vantagens em relação a stack de dado
 - [Athena - Evolução de uma Stack de Dados - Aula 05](https://www.youtube.com/watch?v=8Q1J7Q8J1jA)
 - [Athena - Evolução de uma Stack de Dados - Aula 06](https://www.youtube.com/watch?v=8Q1J7Q8J1jA)
 - [Athena - Evolução de uma Stack de Dados - Aula 07](https://www.youtube.com/watch?v=8Q1J7Q8J1jA)
+
+### Obrigado por apreciar o material, teremos mais evoluções nessa stack de dados no futuro. 
+
+Selo:
+
+[<img src="img/image.webp" width="100" height="100">](https://github.com/Linhares015)
