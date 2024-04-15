@@ -4,7 +4,7 @@
 
 - [Stack Inicial](#stack-inicial)
 - [Stack de Dados Evoluída - Nivel 1](#stack-de-dados-evoluída---nivel-1)
-- [Aulas do Projeto Athena | N1 | YouTube](#aulas-do-projeto-athena-no-youtube)
+- [Aulas do Projeto Athena | N1 | YouTube](#aulas-do-projeto-athena--n1--youtube)
 
 
 ## Stack Inicial
