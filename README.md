@@ -1,5 +1,12 @@
 # Projeto Athena - Evolução de uma Stack de Dados 🧙‍♂️
 
+## Menu
+
+- [Stack Inicial](#stack-inicial)
+- [Stack de Dados Evoluída - Nivel 1](#stack-de-dados-evoluída---nivel-1)
+- [Aulas do Projeto Athena | N1 | YouTube](#aulas-do-projeto-athena-no-youtube)
+
+
 ## Stack Inicial
 
 ### Introdução
@@ -61,7 +68,7 @@ A stack de dados evoluída possui várias vantagens em relação a stack de dado
 
 - **Power BI como ferramenta de visualização de dados**: O Power BI é uma ferramenta muito poderosa e versátil para a visualização de dados, e é ai que ele deve ser utilizado.
 
-### Aulas do Projeto Athena no YouTube
+### Aulas do Projeto Athena | N1 | YouTube
 
 - [Athena - Evolução de uma Stack de Dados - Aula 01](https://youtu.be/d9yKAGrFB10)
 - [Athena - Evolução de uma Stack de Dados - Aula 02](https://youtu.be/2lVmmqdGxNU)
