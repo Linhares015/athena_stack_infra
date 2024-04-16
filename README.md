@@ -70,12 +70,13 @@ A stack de dados evoluída possui várias vantagens em relação a stack de dado
 
 ### Aulas do Projeto Athena | N1 | YouTube
 
-- [Athena - Evolução de uma Stack de Dados - Aula 01](https://youtu.be/d9yKAGrFB10)
-- [Athena - Evolução de uma Stack de Dados - Aula 02](https://youtu.be/2lVmmqdGxNU)
-- [Athena - Evolução de uma Stack de Dados - Aula 03](https://youtu.be/d_slBFnIJKw)
-- [Athena - Evolução de uma Stack de Dados - Aula 04](https://youtu.be/SGiIFvzNEvU)
-- [Athena - Evolução de uma Stack de Dados - Aula 05](https://youtu.be/Wll9ssdWLAA)
-- [Athena - Evolução de uma Stack de Dados - Aula 06](https://youtu.be/VKei-c16f0Y)
+- [Projeto Athena - Aula 01 - Introdução](https://youtu.be/d9yKAGrFB10)
+- [Projeto Athena - Aula 02 - Instalação](https://youtu.be/2lVmmqdGxNU)
+- [Projeto Athena - Aula 03 - Extração Conceito](https://youtu.be/d_slBFnIJKw)
+- [Projeto Athena - Aula 04 - Extração Hands On](https://youtu.be/SGiIFvzNEvU)
+- [Projeto Athena - Aula 05 - Staging Hands On](https://youtu.be/Wll9ssdWLAA)
+- [Projeto Athena - Aula 06 - Marts Conceito](https://youtu.be/VKei-c16f0Y)
+- [Projeto Athena - Aula 07 - Marts Hands On](https://youtu.be/ln4Yx_XMjZc)
 - Demais aulas em breve
 
 ### Obrigado por apreciar o material, teremos mais evoluções nessa stack de dados no futuro. 
