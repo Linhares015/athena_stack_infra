@@ -75,6 +75,7 @@ A stack de dados evoluída possui várias vantagens em relação a stack de dado
 - [Athena - Evolução de uma Stack de Dados - Aula 03](https://youtu.be/d_slBFnIJKw)
 - [Athena - Evolução de uma Stack de Dados - Aula 04](https://youtu.be/SGiIFvzNEvU)
 - [Athena - Evolução de uma Stack de Dados - Aula 05](https://youtu.be/Wll9ssdWLAA)
+- [Athena - Evolução de uma Stack de Dados - Aula 06](https://youtu.be/VKei-c16f0Y)
 - Demais aulas em breve
 
 ### Obrigado por apreciar o material, teremos mais evoluções nessa stack de dados no futuro. 
