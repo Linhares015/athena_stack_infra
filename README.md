@@ -77,7 +77,7 @@ A stack de dados evoluída possui várias vantagens em relação a stack de dado
 - [Projeto Athena - Aula 05 - Staging - Hands On](https://youtu.be/Wll9ssdWLAA)
 - [Projeto Athena - Aula 06 - Marts - Conceito](https://youtu.be/VKei-c16f0Y)
 - [Projeto Athena - Aula 07 - Marts - Hands On](https://youtu.be/ln4Yx_XMjZc)
-- Demais aulas em breve
+- [Projeto Athena - Aula 08 - Finalização](https://youtu.be/_7cb6J5ERvM)
 
 ### Conclusão - Nível 1
 
