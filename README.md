@@ -6,6 +6,8 @@
 - [Stack de Dados Evoluída - Nivel 1](#stack-de-dados-evoluída---nivel-1)
 - [Aulas do Projeto Athena | N1 | YouTube](#aulas-do-projeto-athena--n1--youtube)
 - [Arquivos - Nível 1](#arquivos---nível-1)
+- [Stack de Dados Evoluída - Nivel 2](#stack-de-dados-evoluída---nivel-2)
+- [Aulas do Projeto Athena | N2 | YouTube](#aulas-do-projeto-athena--n2--youtube)
 
 
 ## Stack Inicial
@@ -21,7 +23,7 @@ O projeto Athena é um projeto de evolução de uma stack de dados. A stack de d
 - Power BI como ferramenta de visualização de dados.
 
 <p align="center">
-  <img src="img/1.png" width="500" height="300">
+  <img src="img/1.png" width="800" height="450">
 </p>
 
 ### Desvantagens
@@ -38,7 +40,8 @@ Apesar dessa ser na maioria das vezes a stack de dados inicial de muitas empresa
 
 - **Power BI como ferramenta de visualização de dados**: O Power BI é uma ferramenta muito poderosa e versátil para a visualização de dados, e é ai que ele deve ser utilizado.
 
-### Stack de Dados Evoluída - Nivel 1
+## Stack de Dados Evoluída - Nivel 1
+[Topo ⤴︎](#menu)
 
 A stack de dados evoluída é composta por:
 
@@ -50,7 +53,7 @@ A stack de dados evoluída é composta por:
 - Power BI como ferramenta de visualização de dados.
 
 <p align="center">
-  <img src="img/2.png" width="500" height="300">
+  <img src="img/2.png" width="800" height="450">
 </p>
 
 ### Vantagens
@@ -70,6 +73,7 @@ A stack de dados evoluída possui várias vantagens em relação a stack de dado
 - **Power BI como ferramenta de visualização de dados**: O Power BI é uma ferramenta muito poderosa e versátil para a visualização de dados, e é ai que ele deve ser utilizado.
 
 ### Aulas do Projeto Athena | N1 | YouTube
+[Topo ⤴︎](#menu)
 
 - [Projeto Athena - Aula 01 - Introdução](https://youtu.be/d9yKAGrFB10)
 - [Projeto Athena - Aula 02 - Instalação](https://youtu.be/2lVmmqdGxNU)
@@ -110,9 +114,54 @@ Porém como mencionamos essa não é a stack definitiva, ela é apenas o primeir
 
 - **👩‍🏫 Documentação dos processos**: A documentação dos processos é fundamental para garantir a qualidade e integridade dos dados. A stack de dados evoluída não possui nenhum mecanismo de documentação dos processos. A melhor abordagem seria a implementação de mecanismos de documentação dos processos como documentação de código, documentação de pipelines e documentação de datasets.
 
-#### Resumo
+A perfeição é inatingível, mas a melhoria é infinita. A stack de dados evoluída é um grande avanço em relação a stack de dados inicial, mas ainda há muito a ser feito para torná-la ainda mais robusta e poderosa. A stack de dados evoluída é apenas o primeiro passo de uma longa jornada de evolução de dados, e estamos apenas começando, aguardem os próximos níveis.
 
-A perfeição é inatingível, mas a melhoria é infinita. A stack de dados evoluída é um grande avanço em relação a stack de dados inicial, mas ainda há muito a ser feito para torná-la ainda mais robusta e poderosa. A stack de dados evoluída é apenas o primeiro passo de uma longa jornada de evolução de dados, e estamos apenas começando, aguardem os proximos níveis.
+## Stack de Dados Evoluída - Nivel 2
+[Topo ⤴︎](#menu)
+
+A stack de dados evoluída nível 2 é composta pelas seguintes melhorias:
+
+- Banco de dados relacional como origem de dados;
+- GitHub integrado com Apache Hop;
+- Níveis de acesso no DW PostgreSQL;
+- Pipelines do Apache Hop orquestrados;
+- Data Warehouse rodando no Linux (Docker);
+- Data Warehouse aberto a conexões externas;
+
+<p align="center">
+  <img src="img/4.png" width="800" height="450">
+</p>
+
+### Vantagens
+
+A stack de dados evoluída nível 2 possui várias vantagens em relação a stack nível 1:
+
+- **Banco de dados relacional como origem de dados**: O banco de dados relacional é uma fonte de dados mais robusta e segura do que o Excel. O banco de dados relacional possui mecanismos de segurança e integridade dos dados que o Excel não possui.
+
+- **GitHub integrado com Apache Hop**: O GitHub é uma ferramenta muito poderosa e versátil para o versionamento de código. O GitHub permite o controle de versão do código, o que facilita a colaboração entre os membros da equipe.
+
+- **Níveis de acesso no DW PostgreSQL**: Os níveis de acesso no Data Warehouse PostgreSQL permitem controlar quem pode acessar e modificar os dados. Os níveis de acesso garantem a segurança e integridade dos dados.
+
+- **Pipelines do Apache Hop orquestrados**: Os pipelines do Apache Hop orquestrados garantem a execução dos pipelines de forma eficiente e escalável. Os pipelines orquestrados permitem a execução dos pipelines em paralelo e em sequência, tornando as cargas automáticas e escaláveis.
+
+- **Data Warehouse rodando no Linux (Docker)**: O Data Warehouse rodando no Linux (Docker) é mais estável e seguro do que o Data Warehouse rodando no Windows. O Linux é um sistema operacional mais robusto e seguro, e o Docker é uma ferramenta muito poderosa e versátil para a execução de containers.
+
+- **Data Warehouse aberto a conexões externas**: O Data Warehouse aberto a conexões externas permite que outras ferramentas e sistemas se conectem ao Data Warehouse. O Data Warehouse aberto a conexões externas facilita a integração automática Power BI, Tableau, Metabase, etc.
+
+### Aulas do Projeto Athena | N2 | YouTube
+[Topo ⤴︎](#menu)
+
+- [Projeto Athena - Aula 01 - Introdução](https://youtu.be/7Z9Z9Z9Z9Z9)
+- [Projeto Athena - Aula 02 - GIT - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9)
+- [Projeto Athena - Aula 03 - GIT - Hands On](https://youtu.be/7Z9Z9Z9Z9Z9)
+- [Projeto Athena - Aula 04 - Linux - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9)
+- [Projeto Athena - Aula 05 - Docker - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9)
+- [Projeto Athena - Aula 06 - Mudança DW - Hands On](https://youtu.be/7Z9Z9Z9Z9Z9)
+- [Projeto Athena - Aula 07 - Segurança - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9)
+- [Projeto Athena - Aula 08 - Segurança - Hands On](https://youtu.be/7Z9Z9Z9Z9Z9)
+- [Projeto Athena - Aula 09 - Orquestração - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9)
+- [Projeto Athena - Aula 10 - Orquestração - Hands On](https://youtu.be/7Z9Z9Z9Z9Z9)
+- [Projeto Athena - Aula 11 - Finalização](https://youtu.be/7Z9Z9Z9Z9Z9)
 
 
 ### Obrigado por apreciar o material, ajudem compartilhando e disseminando esse conhecimento. 
