@@ -123,10 +123,11 @@ A stack de dados evoluída nível 2 é composta pelas seguintes melhorias:
 
 - Banco de dados relacional como origem de dados;
 - GitHub integrado com Apache Hop;
-- Níveis de acesso no DW PostgreSQL;
-- Pipelines do Apache Hop orquestrados;
 - Data Warehouse rodando no Linux (Docker);
 - Data Warehouse aberto a conexões externas;
+- Níveis de acesso no DW PostgreSQL;
+- Pipelines do Apache Hop Orquestrados;
+
 
 <p align="center">
   <img src="img/4.png" width="800" height="450">
@@ -140,28 +141,28 @@ A stack de dados evoluída nível 2 possui várias vantagens em relação a stac
 
 - **GitHub integrado com Apache Hop**: O GitHub é uma ferramenta muito poderosa e versátil para o versionamento de código. O GitHub permite o controle de versão do código, o que facilita a colaboração entre os membros da equipe.
 
-- **Níveis de acesso no DW PostgreSQL**: Os níveis de acesso no Data Warehouse PostgreSQL permitem controlar quem pode acessar e modificar os dados. Os níveis de acesso garantem a segurança e integridade dos dados.
-
-- **Pipelines do Apache Hop orquestrados**: Os pipelines do Apache Hop orquestrados garantem a execução dos pipelines de forma eficiente e escalável. Os pipelines orquestrados permitem a execução dos pipelines em paralelo e em sequência, tornando as cargas automáticas e escaláveis.
-
 - **Data Warehouse rodando no Linux (Docker)**: O Data Warehouse rodando no Linux (Docker) é mais estável e seguro do que o Data Warehouse rodando no Windows. O Linux é um sistema operacional mais robusto e seguro, e o Docker é uma ferramenta muito poderosa e versátil para a execução de containers.
 
 - **Data Warehouse aberto a conexões externas**: O Data Warehouse aberto a conexões externas permite que outras ferramentas e sistemas se conectem ao Data Warehouse. O Data Warehouse aberto a conexões externas facilita a integração automática Power BI, Tableau, Metabase, etc.
+
+- **Níveis de acesso no DW PostgreSQL**: Os níveis de acesso no Data Warehouse PostgreSQL permitem controlar quem pode acessar e modificar os dados. Os níveis de acesso garantem a segurança e integridade dos dados.
+
+- **Pipelines do Apache Hop orquestrados**: Os pipelines do Apache Hop orquestrados garantem a execução dos pipelines de forma eficiente e escalável. Os pipelines orquestrados permitem a execução dos pipelines em paralelo e em sequência, tornando as cargas automáticas e escaláveis.
 
 ### Aulas do Projeto Athena | N2 | YouTube
 [Topo ⤴︎](#menu)
 
 - [Projeto Athena - Aula 01 - Introdução](https://youtu.be/7Z9Z9Z9Z9Z9)
-- [Projeto Athena - Aula 02 - GIT - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9)
-- [Projeto Athena - Aula 03 - GIT - Hands On](https://youtu.be/7Z9Z9Z9Z9Z9)
-- [Projeto Athena - Aula 04 - Linux - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9)
-- [Projeto Athena - Aula 05 - Docker - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9)
-- [Projeto Athena - Aula 06 - Mudança DW - Hands On](https://youtu.be/7Z9Z9Z9Z9Z9)
-- [Projeto Athena - Aula 07 - Segurança - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9)
-- [Projeto Athena - Aula 08 - Segurança - Hands On](https://youtu.be/7Z9Z9Z9Z9Z9)
-- [Projeto Athena - Aula 09 - Orquestração - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9)
-- [Projeto Athena - Aula 10 - Orquestração - Hands On](https://youtu.be/7Z9Z9Z9Z9Z9)
-- [Projeto Athena - Aula 11 - Finalização](https://youtu.be/7Z9Z9Z9Z9Z9)
+- [Projeto Athena - Aula 02 - GIT - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9) - Em breve
+- [Projeto Athena - Aula 03 - GIT - Hands On](https://youtu.be/7Z9Z9Z9Z9Z9) - Em breve
+- [Projeto Athena - Aula 04 - Linux - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9) - Em breve
+- [Projeto Athena - Aula 05 - Docker - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9) - Em breve
+- [Projeto Athena - Aula 06 - Mudança DW - Hands On](https://youtu.be/7Z9Z9Z9Z9Z9) - Em breve
+- [Projeto Athena - Aula 07 - Segurança - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9) - Em breve
+- [Projeto Athena - Aula 08 - Segurança - Hands On](https://youtu.be/7Z9Z9Z9Z9Z9) - Em breve
+- [Projeto Athena - Aula 09 - Orquestração - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9) - Em breve
+- [Projeto Athena - Aula 10 - Orquestração - Hands On](https://youtu.be/7Z9Z9Z9Z9Z9) - Em breve
+- [Projeto Athena - Aula 11 - Finalização](https://youtu.be/7Z9Z9Z9Z9Z9) - Em breve
 
 
 ### Obrigado por apreciar o material, ajudem compartilhando e disseminando esse conhecimento. 
