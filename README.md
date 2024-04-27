@@ -153,7 +153,7 @@ A stack de dados evoluída nível 2 possui várias vantagens em relação a stac
 [Topo ⤴︎](#menu)
 
 - [Projeto Athena - Aula 01 - Introdução](https://youtu.be/GV0RuKpsrz4)
-- [Projeto Athena - Aula 02 - GIT - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9) - Em breve
+- [Projeto Athena - Aula 02 - GIT - Conceito](https://youtu.be/uQGesECRz4k)
 - [Projeto Athena - Aula 03 - GIT - Hands On](https://youtu.be/7Z9Z9Z9Z9Z9) - Em breve
 - [Projeto Athena - Aula 04 - Linux - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9) - Em breve
 - [Projeto Athena - Aula 05 - Docker - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9) - Em breve

@@ -1,54 +1,57 @@
 provider "google" {
-  credentials = file("/home/athena-417502-0c2da699abb0.json")
-  project     = "athena-417502"
-  region      = "us-central1"
+  project = "athena-421420"
+  region  = "us-east1"
 }
 
-resource "google_container_cluster" "athena_cluster" {
-  name     = "athena-cluster"
-  location = "us-central1"
+resource "google_compute_instance" "default" {
+  name         = "instancia-f1-micro"
+  machine_type = "f1-micro"
+  zone         = "us-central1-a"
 
-  node_pool {
-    name       = "default-pool"
-    node_count = 1
+  boot_disk {
+    initialize_params {
+      image = "debian-cloud/debian-9"
+    }
+  }
 
-    node_config {
-      machine_type = "e2-medium"
+  network_interface {
+    network = "default"
+    access_config {
+      // A configuração de IP externo é opcional.
     }
   }
 }
 
-# Define o provedor do Helm.
-provider "helm" {
-  kubernetes {
-    host                   = "https://${google_container_cluster.athena_cluster.endpoint}"
-    token                  = data.google_client_config.default.access_token
-    cluster_ca_certificate = base64decode(google_container_cluster.athena_cluster.master_auth[0].cluster_ca_certificate)
+resource "google_monitoring_notification_channel" "email" {
+  type = "email"
+  labels = {
+    email_address = "seu-email@example.com"
+  }
+  user_labels = {
+    label = "value"
   }
 }
 
-data "google_client_config" "default" {}
+resource "google_monitoring_alert_policy" "high_cost_alert" {
+  display_name = "High Cost Alert"
 
-# Cria o namespace do ArgoCD.
-resource "kubernetes_namespace" "argocd" {
-  metadata {
-    name = "argocd"
-  }
-}
+  conditions {
+    display_name = "Cost above 50 BRL"
 
-# Instalação do ArgoCD via Helm chart.
-resource "helm_release" "argocd" {
-  name       = "argocd"
-  chart      = "argo-cd"
-  repository = "https://argoproj.github.io/argo-helm"
-  version    = "3.2.3"
-  namespace  = kubernetes_namespace.argocd.metadata[0].name
-
-  set {
-    name  = "server.service.type"
-    value = "LoadBalancer"
+    condition_threshold {
+      filter     = "metric.type=\"billing.googleapis.com/charges\" resource.type=\"project\""
+      duration   = "86400s"
+      comparison = "COMPARISON_GREATER_THAN"
+      threshold_value = 50
+      aggregations {
+        alignment_period   = "86400s"
+        per_series_aligner = "ALIGN_RATE"
+      }
+    }
   }
 
-  # Adicione outras configurações do ArgoCD conforme necessário.
-  # ...
+  notification_channels = [google_monitoring_notification_channel.email.id]
+
+  combiner = "OR"
+  enabled = true
 }
