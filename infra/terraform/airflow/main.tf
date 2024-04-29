@@ -18,6 +18,11 @@ resource "kubernetes_deployment" "airflow" {
         }
       }
       spec {
+        securityContext {
+          runAsUser = 0  
+          runAsGroup = 0 
+          fsGroup = 0    
+        }
         init_container {
           name            = "init-db"
           image           = "apache/airflow:latest"
@@ -27,18 +32,24 @@ resource "kubernetes_deployment" "airflow" {
             mount_path   = "/opt/airflow"
             name         = "airflow-storage"
           }
+          securityContext {
+            allowPrivilegeEscalation = false
+          }
         }
         container {
           image           = "apache/airflow:latest"
           name            = "airflow"
           command         = ["airflow"]
           args            = ["webserver"]
-          port {
+          ports {
             container_port = 8080
           }
           volume_mount {
             mount_path     = "/opt/airflow/dags"
             name           = "airflow-storage"
+          }
+          securityContext {
+            allowPrivilegeEscalation = false
           }
         }
         volume {
