@@ -19,9 +19,9 @@ resource "kubernetes_deployment" "airflow" {
       }
       spec {
         security_context {
-          runAsUser = 5000  // Substitua 5000 pelo UID adequado para o seu ambiente
-          runAsGroup = 5000 // Substitua 5000 pelo GID adequado para o seu ambiente
-          fsGroup = 5000    // Este garante que arquivos criados sejam de propriedade do grupo 5000
+          runAsUser = 0
+          runAsGroup = 0
+          fsGroup = 0
         }
         init_container {
           name            = "init-db"
