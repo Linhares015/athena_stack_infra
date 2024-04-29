@@ -1,16 +1,36 @@
+# PVC for PostgreSQL
 resource "kubernetes_persistent_volume_claim" "postgres_pvc" {
   metadata {
     name      = "postgres-pvc"
-    namespace = var.namespace  # Usar a variável passada ao módulo para definir o namespace
+    namespace = var.namespace
   }
 
   spec {
     access_modes = ["ReadWriteOnce"]
     resources {
-      requests {
+      requests = {
         storage = var.postgres_storage_size
       }
     }
-    storage_class_name = "manual" 
+    storage_class_name = "manual"
+  }
+}
+
+# PV for PostgreSQL
+resource "kubernetes_persistent_volume" "postgres_pv" {
+  metadata {
+    name = "postgres-pv"
+  }
+
+  spec {
+    capacity = {
+      storage = var.postgres_storage_size
+    }
+    access_modes = ["ReadWriteOnce"]
+    persistent_volume_reclaim_policy = "Retain"
+    storage_class_name = "manual"
+    host_path {
+      path = var.postgres_data_path
+    }
   }
 }

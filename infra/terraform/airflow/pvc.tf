@@ -1,3 +1,4 @@
+# PVC for Airflow
 resource "kubernetes_persistent_volume_claim" "airflow_pvc" {
   metadata {
     name      = "airflow-pvc"
@@ -7,7 +8,7 @@ resource "kubernetes_persistent_volume_claim" "airflow_pvc" {
   spec {
     access_modes = ["ReadWriteOnce"]
     resources {
-      requests {
+      requests = {
         storage = var.airflow_storage_size
       }
     }
@@ -15,6 +16,7 @@ resource "kubernetes_persistent_volume_claim" "airflow_pvc" {
   }
 }
 
+# PV for Airflow
 resource "kubernetes_persistent_volume" "airflow_pv" {
   metadata {
     name = "airflow-pv"
@@ -22,7 +24,7 @@ resource "kubernetes_persistent_volume" "airflow_pv" {
 
   spec {
     capacity = {
-      storage = var.airflow_storage_size 
+      storage = var.airflow_storage_size
     }
     access_modes = ["ReadWriteOnce"]
     persistent_volume_reclaim_policy = "Retain"
