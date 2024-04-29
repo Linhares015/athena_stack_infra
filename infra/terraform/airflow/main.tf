@@ -1,7 +1,7 @@
 resource "kubernetes_deployment" "airflow" {
   metadata {
     name      = "airflow"
-    namespace = kubernetes_namespace.dev.metadata[0].name
+    namespace = var.namespace
   }
 
   spec {

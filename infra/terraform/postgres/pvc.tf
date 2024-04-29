@@ -1,7 +1,7 @@
 resource "kubernetes_persistent_volume_claim" "postgres_pvc" {
   metadata {
     name      = "postgres-pvc"
-    namespace = kubernetes_namespace.dev.metadata[0].name
+    namespace = var.namespace  # Usar a variável passada ao módulo para definir o namespace
   }
 
   spec {
@@ -11,5 +11,6 @@ resource "kubernetes_persistent_volume_claim" "postgres_pvc" {
         storage = var.postgres_storage_size
       }
     }
+    storage_class_name = "manual" 
   }
 }

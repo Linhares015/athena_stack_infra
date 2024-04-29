@@ -1,7 +1,7 @@
 resource "kubernetes_deployment" "postgres" {
   metadata {
     name      = "postgres"
-    namespace = kubernetes_namespace.dev.metadata[0].name
+    namespace = var.namespace
   }
 
   spec {
