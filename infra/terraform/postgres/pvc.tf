@@ -29,8 +29,11 @@ resource "kubernetes_persistent_volume" "postgres_pv" {
     access_modes = ["ReadWriteOnce"]
     persistent_volume_reclaim_policy = "Retain"
     storage_class_name = "manual"
-    host_path {
-      path = var.postgres_data_path
+
+    persistent_volume_source {
+      host_path {
+        path = var.postgres_data_path
+      }
     }
   }
 }
