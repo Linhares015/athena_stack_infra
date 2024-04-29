@@ -23,12 +23,12 @@ resource "kubernetes_deployment" "postgres" {
           name  = "postgres"
           env {
             name  = "POSTGRES_PASSWORD"
-            value = "Linhares015@@"
+            value = "Linhares015@@" 
           }
           port {
             container_port = 5432
           }
-          volume_mounts {
+          volume_mount {
             mount_path = "/var/lib/postgresql/data"
             name        = "postgres-storage"
           }
@@ -47,7 +47,7 @@ resource "kubernetes_deployment" "postgres" {
 resource "kubernetes_service" "postgres" {
   metadata {
     name      = "postgres"
-    namespace = kubernetes_namespace.dev.metadata[0].name
+    namespace = var.namespace
   }
 
   spec {

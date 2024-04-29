@@ -1,7 +1,7 @@
 resource "kubernetes_deployment" "airflow" {
   metadata {
     name      = "airflow"
-    namespace = var.namespace
+    namespace = var.namespace 
   }
 
   spec {
@@ -24,7 +24,7 @@ resource "kubernetes_deployment" "airflow" {
           port {
             container_port = 8080
           }
-          volume_mounts {
+          volume_mount {
             mount_path = "/opt/airflow/dags"
             name        = "airflow-storage"
           }
@@ -43,7 +43,7 @@ resource "kubernetes_deployment" "airflow" {
 resource "kubernetes_service" "airflow" {
   metadata {
     name      = "airflow"
-    namespace = kubernetes_namespace.dev.metadata[0].name
+    namespace = var.namespace 
   }
 
   spec {
@@ -61,4 +61,3 @@ resource "kubernetes_service" "airflow" {
 output "airflow_service_ip" {
   value = kubernetes_service.airflow.status[0].load_balancer[0].ingress[0].ip
 }
-
