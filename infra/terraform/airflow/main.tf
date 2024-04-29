@@ -18,10 +18,10 @@ resource "kubernetes_deployment" "airflow" {
         }
       }
       spec {
-        securityContext {
-          runAsUser = 0  
-          runAsGroup = 0 
-          fsGroup = 0    
+        security_context {
+          runAsUser = 5000  // Substitua 5000 pelo UID adequado para o seu ambiente
+          runAsGroup = 5000 // Substitua 5000 pelo GID adequado para o seu ambiente
+          fsGroup = 5000    // Este garante que arquivos criados sejam de propriedade do grupo 5000
         }
         init_container {
           name            = "init-db"
@@ -32,7 +32,7 @@ resource "kubernetes_deployment" "airflow" {
             mount_path   = "/opt/airflow"
             name         = "airflow-storage"
           }
-          securityContext {
+          security_context {
             allowPrivilegeEscalation = false
           }
         }
@@ -41,14 +41,14 @@ resource "kubernetes_deployment" "airflow" {
           name            = "airflow"
           command         = ["airflow"]
           args            = ["webserver"]
-          ports {
+          port {
             container_port = 8080
           }
           volume_mount {
             mount_path     = "/opt/airflow/dags"
             name           = "airflow-storage"
           }
-          securityContext {
+          security_context {
             allowPrivilegeEscalation = false
           }
         }
