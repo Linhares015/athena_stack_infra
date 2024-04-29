@@ -29,8 +29,11 @@ resource "kubernetes_persistent_volume" "airflow_pv" {
     access_modes = ["ReadWriteOnce"]
     persistent_volume_reclaim_policy = "Retain"
     storage_class_name = "manual"
-    host_path {
-      path = var.airflow_dag_path
+
+    persistent_volume_source {
+      host_path {
+        path = var.airflow_dag_path
+      }
     }
   }
 }
