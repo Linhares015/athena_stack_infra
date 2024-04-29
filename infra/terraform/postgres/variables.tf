@@ -7,7 +7,7 @@ variable "namespace" {
 variable "postgres_storage_size" {
   description = "The amount of storage to allocate for PostgreSQL."
   type        = string
-  default     = "5Gi"
+  default     = "10Gi"
 }
 
 variable "postgres_data_path" {

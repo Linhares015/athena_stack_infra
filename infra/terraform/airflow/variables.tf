@@ -7,7 +7,7 @@ variable "namespace" {
 variable "airflow_storage_size" {
   description = "The amount of storage to allocate for Airflow."
   type        = string
-  default     = "5Gi"
+  default     = "10Gi"
 }
 
 variable "airflow_dag_path" {
