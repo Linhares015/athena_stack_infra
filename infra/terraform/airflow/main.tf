@@ -21,8 +21,8 @@ resource "kubernetes_deployment" "airflow" {
         container {
           image = "apache/airflow:latest"
           name  = "airflow"
-          command = "airflow"
-          args = "webserver"
+          command = ["airflow"]
+          args = ["webserver"]
           port {
             container_port = 8080
           }
