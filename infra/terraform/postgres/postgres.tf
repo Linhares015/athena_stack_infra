@@ -61,3 +61,7 @@ resource "kubernetes_service" "postgres" {
     type = "LoadBalancer"
   }
 }
+
+output "postgres_service_ip" {
+  value = kubernetes_service.postgres.status[0].load_balancer[0].ingress[0].ip
+}

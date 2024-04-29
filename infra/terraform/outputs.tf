@@ -1,7 +1,7 @@
 output "postgres_service_ip" {
-  value = kubernetes_service.postgres.metadata[0].name
+  value = module.postgres.postgres_service_ip
 }
 
 output "airflow_service_ip" {
-  value = kubernetes_service.airflow.metadata[0].name
+  value = module.airflow.airflow_service_ip
 }

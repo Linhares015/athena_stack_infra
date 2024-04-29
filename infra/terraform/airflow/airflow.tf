@@ -57,3 +57,8 @@ resource "kubernetes_service" "airflow" {
     type = "LoadBalancer"
   }
 }
+
+output "airflow_service_ip" {
+  value = kubernetes_service.airflow.status[0].load_balancer[0].ingress[0].ip
+}
+
