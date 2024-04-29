@@ -4,7 +4,7 @@ variable "airflow_dag_path" {
 }
 
 variable "namespace" {
-  default = "dev"
+  description = "ambiente de execução do cluster k8s"
   type    = string
   default = "dev"
 }
