@@ -18,23 +18,33 @@ resource "kubernetes_deployment" "airflow" {
         }
       }
       spec {
+        init_container {
+          name            = "init-db"
+          image           = "apache/airflow:latest"
+          command         = ["airflow"]
+          args            = ["db", "init"]
+          volume_mount {
+            mount_path   = "/opt/airflow"
+            name         = "airflow-storage"
+          }
+        }
         container {
-          image = "apache/airflow:latest"
-          name  = "airflow"
-          command = ["airflow"]
-          args = ["webserver"]
+          image           = "apache/airflow:latest"
+          name            = "airflow"
+          command         = ["airflow"]
+          args            = ["webserver"]
           port {
             container_port = 8080
           }
           volume_mount {
-            mount_path = "/opt/airflow/dags"
-            name        = "airflow-storage"
+            mount_path     = "/opt/airflow/dags"
+            name           = "airflow-storage"
           }
         }
         volume {
-          name = "airflow-storage"
+          name            = "airflow-storage"
           persistent_volume_claim {
-            claim_name = "airflow-pvc"
+            claim_name    = "airflow-pvc"
           }
         }
       }
