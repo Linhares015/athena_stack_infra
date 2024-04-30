@@ -9,11 +9,11 @@ resource "kubernetes_namespace" "dev" {
 }
 
 module "postgres" {
-  source    = "./postgres"
+  source    = "./modules/postgres"
   namespace = var.namespace
 }
 
 module "airflow" {
-  source    = "./airflow"
+  source    = "./modules/airflow"
   namespace = var.namespace
 }
