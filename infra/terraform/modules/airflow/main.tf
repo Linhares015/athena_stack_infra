@@ -34,7 +34,7 @@ resource "kubernetes_deployment" "airflow" {
           }
           env {
             name  = "AIRFLOW__CORE__SQL_ALCHEMY_CONN"
-            value = "postgresql+psycopg2://postgres:Linhares015@@${module.postgres.postgres_service_ip}/airflow"
+            value = "postgresql+psycopg2://postgres:Linhares015@@${var.postgres_service_ip}/airflow"
           }
           security_context {
             allow_privilege_escalation = false
@@ -54,7 +54,7 @@ resource "kubernetes_deployment" "airflow" {
           }
           env {
             name  = "AIRFLOW__CORE__SQL_ALCHEMY_CONN"
-            value = "postgresql+psycopg2://postgres:Linhares015@@${module.postgres.postgres_service_ip}/airflow"
+            value = "postgresql+psycopg2://postgres:Linhares015@@${var.postgres_service_ip}/airflow"
           }
           security_context {
             allow_privilege_escalation = false

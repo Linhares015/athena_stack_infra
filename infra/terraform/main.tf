@@ -14,6 +14,7 @@ module "postgres" {
 }
 
 module "airflow" {
-  source    = "./modules/airflow"
-  namespace = var.namespace
+  source              = "./modules/airflow"
+  namespace           = var.namespace
+  postgres_service_ip = module.postgres.postgres_service_ip
 }

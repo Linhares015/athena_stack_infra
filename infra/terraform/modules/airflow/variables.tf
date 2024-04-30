@@ -15,3 +15,8 @@ variable "airflow_dag_path" {
   type        = string
   default     = "/mnt/data/airflow/dags"
 }
+
+variable "postgres_service_ip" {
+  description = "The IP address of the PostgreSQL service"
+  type        = string
+}
