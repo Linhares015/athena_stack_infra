@@ -1,7 +1,7 @@
 resource "kubernetes_deployment" "airflow" {
   metadata {
     name      = "airflow"
-    namespace = var.namespace 
+    namespace = var.namespace
   }
 
   spec {
@@ -27,10 +27,14 @@ resource "kubernetes_deployment" "airflow" {
           name            = "init-db"
           image           = "apache/airflow:latest"
           command         = ["airflow"]
-          args            = ["db", "init"]
+          args            = ["db", "migrate"]
           volume_mount {
             mount_path   = "/opt/airflow"
             name         = "airflow-storage"
+          }
+          env {
+            name  = "AIRFLOW__CORE__SQL_ALCHEMY_CONN"
+            value = "postgresql+psycopg2://postgres:Linhares015@@${kubernetes_service.postgres.status[0].load_balancer[0].ingress[0].ip}/airflow"
           }
           security_context {
             allow_privilege_escalation = false
@@ -47,6 +51,10 @@ resource "kubernetes_deployment" "airflow" {
           volume_mount {
             mount_path     = "/opt/airflow/dags"
             name           = "airflow-storage"
+          }
+          env {
+            name  = "AIRFLOW__CORE__SQL_ALCHEMY_CONN"
+            value = "postgresql+psycopg2://postgres:Linhares015@@${kubernetes_service.postgres.status[0].load_balancer[0].ingress[0].ip}/airflow"
           }
           security_context {
             allow_privilege_escalation = false
@@ -66,7 +74,7 @@ resource "kubernetes_deployment" "airflow" {
 resource "kubernetes_service" "airflow" {
   metadata {
     name      = "airflow"
-    namespace = var.namespace 
+    namespace = var.namespace
   }
 
   spec {
