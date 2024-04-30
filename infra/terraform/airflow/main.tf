@@ -19,9 +19,9 @@ resource "kubernetes_deployment" "airflow" {
       }
       spec {
         security_context {
-          run_as_user = 0
-          run_as_group = 0
-          fs_group = 0
+          run_as_user = 0  // Usuário root, considerar mudar se possível
+          run_as_group = 0 // Grupo root, considerar mudar se possível
+          fs_group = 0     // fsGroup root, considerar mudar se possível
         }
         init_container {
           name            = "init-db"
@@ -33,7 +33,7 @@ resource "kubernetes_deployment" "airflow" {
             name         = "airflow-storage"
           }
           security_context {
-            allowPrivilegeEscalation = false
+            allow_privilege_escalation = false
           }
         }
         container {
@@ -49,7 +49,7 @@ resource "kubernetes_deployment" "airflow" {
             name           = "airflow-storage"
           }
           security_context {
-            allowPrivilegeEscalation = false
+            allow_privilege_escalation = false
           }
         }
         volume {
