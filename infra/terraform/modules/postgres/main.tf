@@ -41,7 +41,7 @@ resource "kubernetes_deployment" "postgres" {
             name  = "PGPASSWORD"
             value = "Linhares015@@"
           }
-          volume_mounts {
+          volume_mount {
             mount_path = "/setup-scripts"
             name       = "setup-script"
           }
@@ -53,7 +53,7 @@ resource "kubernetes_deployment" "postgres" {
             name  = "POSTGRES_PASSWORD"
             value = "Linhares015@@" 
           }
-          port {
+          ports {
             container_port = 5432
           }
           volume_mount {
@@ -88,7 +88,7 @@ resource "kubernetes_service" "postgres" {
     selector = {
       app = "postgres"
     }
-    port {
+    ports {
       port        = 5432
       target_port = 5432
     }

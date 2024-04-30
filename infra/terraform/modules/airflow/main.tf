@@ -34,7 +34,7 @@ resource "kubernetes_deployment" "airflow" {
           }
           env {
             name  = "AIRFLOW__CORE__SQL_ALCHEMY_CONN"
-            value = "postgresql+psycopg2://postgres:Linhares015@@${kubernetes_service.postgres.status[0].load_balancer[0].ingress[0].ip}/airflow"
+            value = "postgresql+psycopg2://postgres:Linhares015@@${module.postgres.postgres_service_ip}/airflow"
           }
           security_context {
             allow_privilege_escalation = false
@@ -45,7 +45,7 @@ resource "kubernetes_deployment" "airflow" {
           name            = "airflow"
           command         = ["airflow"]
           args            = ["webserver"]
-          port {
+          ports {
             container_port = 8080
           }
           volume_mount {
@@ -54,16 +54,16 @@ resource "kubernetes_deployment" "airflow" {
           }
           env {
             name  = "AIRFLOW__CORE__SQL_ALCHEMY_CONN"
-            value = "postgresql+psycopg2://postgres:Linhares015@@${kubernetes_service.postgres.status[0].load_balancer[0].ingress[0].ip}/airflow"
+            value = "postgresql+psycopg2://postgres:Linhares015@@${module.postgres.postgres_service_ip}/airflow"
           }
           security_context {
             allow_privilege_escalation = false
           }
         }
         volume {
-          name            = "airflow-storage"
+          name = "airflow-storage"
           persistent_volume_claim {
-            claim_name    = "airflow-pvc"
+            claim_name = "airflow-pvc"
           }
         }
       }
@@ -81,7 +81,7 @@ resource "kubernetes_service" "airflow" {
     selector = {
       app = "airflow"
     }
-    port {
+    ports {
       port        = 8080
       target_port = 8080
     }
