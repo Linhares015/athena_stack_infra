@@ -19,9 +19,9 @@ resource "kubernetes_deployment" "airflow" {
       }
       spec {
         security_context {
-          runAsUser = 0
-          runAsGroup = 0
-          fsGroup = 0
+          run_as_user = 0
+          run_as_group = 0
+          fs_group = 0
         }
         init_container {
           name            = "init-db"
