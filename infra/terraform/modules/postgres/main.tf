@@ -53,7 +53,7 @@ resource "kubernetes_deployment" "postgres" {
             name  = "POSTGRES_PASSWORD"
             value = "Linhares015@@" 
           }
-          ports {
+          port {
             container_port = 5432
           }
           volume_mount {
@@ -88,7 +88,7 @@ resource "kubernetes_service" "postgres" {
     selector = {
       app = "postgres"
     }
-    ports {
+    port {
       port        = 5432
       target_port = 5432
     }

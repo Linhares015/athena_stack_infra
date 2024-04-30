@@ -45,7 +45,7 @@ resource "kubernetes_deployment" "airflow" {
           name            = "airflow"
           command         = ["airflow"]
           args            = ["webserver"]
-          ports {
+          port {
             container_port = 8080
           }
           volume_mount {
@@ -81,7 +81,7 @@ resource "kubernetes_service" "airflow" {
     selector = {
       app = "airflow"
     }
-    ports {
+    port {
       port        = 8080
       target_port = 8080
     }
