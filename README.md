@@ -159,10 +159,7 @@ A stack de dados evoluída nível 2 possui várias vantagens em relação a stac
 - [Projeto Athena - Aula 05 - Docker - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9)
 - [Projeto Athena - Aula 06 - Mudança DW - Hands On](https://youtu.be/c-fWxciQTEY)
 - [Projeto Athena - Aula 07 - Mudança ETL - Hands On](https://youtu.be/ZuzIGuu911Y)
-- [Projeto Athena - Aula 08 - Segurança - Hands On](https://youtu.be/7Z9Z9Z9Z9Z9) - Em breve
-- [Projeto Athena - Aula 09 - Orquestração - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9) - Em breve
-- [Projeto Athena - Aula 10 - Orquestração - Hands On](https://youtu.be/7Z9Z9Z9Z9Z9) - Em breve
-- [Projeto Athena - Aula 11 - Finalização](https://youtu.be/7Z9Z9Z9Z9Z9) - Em breve
+- [Projeto Athena - Aula 11 - Finalização](https://youtu.be/wZHAdewwsSs)
 
 ### Conclusão - Nível 2
 
