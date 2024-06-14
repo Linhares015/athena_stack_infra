@@ -10,6 +10,17 @@
 - [Aulas do Projeto Athena | N2 | YouTube](#aulas-do-projeto-athena--n2--youtube)
 
 
+## Ciclo de vida da Engenharia de Dados
+
+| Elemento                 | Descrição                                                                                      |
+|--------------------------|------------------------------------------------------------------------------------------------|
+| **Segurança**            | Controle de acesso para dados<br>Sistemas                                                      |
+| **Gerenciamento de dados** | Governança de dados<br>Capacidade de dados<br>Accountability<br>Modelagem de dados<br>Integridade dos dados |
+| **DataOps**              | Governança de dados<br>Observabilidade e monitoramento<br>Relatórios de incidentes              |
+| **Arquitetura de dados** | Análise de dados<br>Desenvolvimento<br>Plataforma de dados<br>Gerar valor para dados           |
+| **Orquestração**         | Coordenar fluxos de trabalho<br>Programação<br>Executar tarefas                                 |
+| **Engenharia de software** | Habilidades de programar<br>Prototipação<br>Gestão de código<br>Teste e recuperação             |
+
 ## Stack Inicial
 
 ### Introdução
@@ -213,6 +224,10 @@ A stack de dados evoluída nível 3 é composta pelas seguintes melhorias:
   <img src="img/5.png" width="800" height="450">
 </p>
 
+### Bônus
+
+Desenvolvimento de um projeto de dados completo, com todas as ferramentas e tecnologias da stack de dados evoluída nível 3.
+
 ### Vantagens
 
 A stack de dados evoluída nível 3 oferece diversas vantagens em comparação à stack nível 2, com ferramentas especializadas que aprimoram cada aspecto do processamento de dados:
@@ -250,6 +265,13 @@ A stack de dados evoluída nível 3 oferece diversas vantagens em comparação �
 **Shell Script para automação de tarefas**: Shell Scripts são utilizados para automatizar tarefas `repetitivas` e complexas, integrando diversos processos e ferramentas. Eles são altamente `eficientes` para a execução de scripts de manutenção, backups, deploys e outras operações administrativas, suportando a `escalabilidade` e a `integração` com sistemas de monitoramento.
 
 Essa stack nível 3, composta por ferramentas especializadas, proporciona uma infraestrutura de dados robusta, segura e eficiente, capaz de lidar com grandes volumes de dados e complexidades operacionais, garantindo alto desempenho e confiabilidade em todas as etapas do pipeline de dados.
+
+
+
+### Aulas do Projeto Athena | N3 | YouTube
+[Topo ⤴︎](#menu)
+
+- [Projeto Athena - Aula 01 - Introdução](https://youtu.be/GV0) - Em breve
 
 
 ### Obrigado por apreciar o material, ajudem compartilhando e disseminando esse conhecimento. 
