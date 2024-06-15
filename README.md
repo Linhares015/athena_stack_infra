@@ -8,6 +8,8 @@
 - [Arquivos - Nível 1](#arquivos---nível-1)
 - [Stack de Dados Evoluída - Nivel 2](#stack-de-dados-evoluída---nivel-2)
 - [Aulas do Projeto Athena | N2 | YouTube](#aulas-do-projeto-athena--n2--youtube)
+- [Stack de Dados Evoluída - Nivel 3](#stack-de-dados-evoluída---nivel-3)
+- [Aulas do Projeto Athena | N3 | YouTube](#aulas-do-projeto-athena--n3--youtube)
 
 
 ## Ciclo de vida da Engenharia de Dados
