@@ -274,7 +274,8 @@ Essa stack nível 3, composta por ferramentas especializadas, proporciona uma in
 [Topo ⤴︎](#menu)
 
 - [Projeto Athena - Aula 01 - Introdução](https://youtu.be/2neuQg14VTA)
-- [Projeto Athena - Aula 02 - ETL x ELT](https://youtu.be/uQGesECRz4k) - Em breve
+- [Projeto Athena - Aula 02 - ETL x ELT - Conceito](https://youtu.be/D-7u0iog5QE)
+- [Projeto Athena - Aula 02 - Airbyte - Conceito](https://youtu.be/2) - Em breve
 
 
 ### Obrigado por apreciar o material, ajudem compartilhando e disseminando esse conhecimento. 
