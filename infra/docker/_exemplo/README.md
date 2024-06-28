@@ -28,7 +28,6 @@ Um Dockerfile é um script de configuração que contém uma série de comandos 
 Exemplo de Dockerfile:
 
 ```Dockerfile
-Copiar código
 # Use a imagem base
 FROM node:14
 
@@ -70,7 +69,6 @@ Docker Compose é uma ferramenta para definir e gerenciar multi-containers Docke
 Exemplo de docker-compose.yml:
 
 ```yaml
-Copiar código
 version: '3'
 services:
   web:
