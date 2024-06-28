@@ -275,7 +275,7 @@ Essa stack nível 3, composta por ferramentas especializadas, proporciona uma in
 
 - [Projeto Athena - Aula 01 - Introdução](https://youtu.be/2neuQg14VTA)
 - [Projeto Athena - Aula 02 - ETL x ELT - Conceito](https://youtu.be/D-7u0iog5QE)
-- [Projeto Athena - Aula 03 - Docker File e Docker-Compose - Conceito](https://youtu.be/TheuhCxI6Xc)
+- [Projeto Athena - Aula 03 - Formas de Subir Containers - DockerFile - DockerCompose - Conceito](https://youtu.be/TheuhCxI6Xc)
 - [Projeto Athena - Aula 04 - DW Postgres - Para PROD](https://youtu.be/) - Em breve
 
 
