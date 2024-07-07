@@ -41,7 +41,7 @@ Para configurar o Grafana como seu monitor principal usando o cAdvisor e o Prome
      
      - **Uso de Memória do Host:**
        ```promql
-      node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes
+       node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes
        ```
 ### Passo 5: Monitoramento e Alertas
 
