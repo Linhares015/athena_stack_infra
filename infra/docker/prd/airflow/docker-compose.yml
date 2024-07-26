@@ -1,0 +1,97 @@
+version: '3.7'
+
+services:
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: airflow
+      MYSQL_USER: airflow
+      MYSQL_PASSWORD: airflow
+      MYSQL_INITDB_SKIP_TZINFO: 1
+      TZ: UTC
+    volumes:
+      - mysql_data:/var/lib/mysql
+    command: --default-authentication-plugin=mysql_native_password --sql-mode="STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1g
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -uroot -proot | grep 'mysqld is alive'"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  webserver:
+    image: apache/airflow:2.4.3
+    restart: always
+    depends_on:
+      - mysql
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'False'
+      AIRFLOW__CORE__EXECUTOR: 'LocalExecutor'
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: 'mysql+mysqldb://airflow:airflow@mysql/airflow'
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "8080:8080"
+    command: webserver
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1g
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8080/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  scheduler:
+    image: apache/airflow:2.4.3
+    restart: always
+    depends_on:
+      - mysql
+    environment:
+      AIRFLOW__CORE__EXECUTOR: 'LocalExecutor'
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: 'mysql+mysqldb://airflow:airflow@mysql/airflow'
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: scheduler
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1g
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8793/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  mysql_data:
