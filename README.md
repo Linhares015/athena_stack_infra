@@ -280,6 +280,7 @@ Essa stack nível 3, composta por ferramentas especializadas, proporciona uma in
 - [Projeto Athena - Aula 05 - Postgres DW - Hands-on](https://youtu.be/8yQDuqEDRso)
 - [Projeto Athena - Aula 06 - Airbyte - Hands-on](https://youtu.be/6eJHICPH8VU)
 - [Projeto Athena - Aula 07 - Apache Airflow - Hands-on](https://youtu.be/a-b7eZi5BTM)
+- [Projeto Athena - Aula 08 - DBT - Conceito](https://youtu.be/88AwUUfRKUc)
 
 ### Obrigado por apreciar o material, ajudem compartilhando e disseminando esse conhecimento. 
 
