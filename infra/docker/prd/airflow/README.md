@@ -11,13 +11,13 @@ docker-compose run --rm webserver airflow db init
 - Terceiro vamos criar o usuário para acessar o Airflow, execute o comando abaixo:
 
 ```bash
-docker-compose run --rm webserver airflow users create
---username admin
---password admin
---firstname Admin
---lastname User
---role Admin
---email admin@example.com
+docker-compose run --rm webserver airflow users create \
+  --username admin \
+  --password admin \
+  --firstname Admin \
+  --lastname User \
+  --role Admin \
+  --email admin@example.com
 ```
 
 - Quarto vamos iniciar o Airflow, execute o comando abaixo:
