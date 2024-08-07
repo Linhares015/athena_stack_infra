@@ -142,3 +142,8 @@ with DAG(
 
     run_airbyte_crypto
 ```
+
+
+## Repo de exemplo das DAGS com o cosmos para DBT
+
+https://github.com/astronomer/cosmos-demo

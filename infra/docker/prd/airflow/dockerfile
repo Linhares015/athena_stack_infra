@@ -1,0 +1,4 @@
+FROM apache/airflow:2.4.3
+
+USER airflow
+RUN pip install --user astronomer-cosmos

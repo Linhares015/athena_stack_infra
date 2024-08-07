@@ -31,7 +31,8 @@ services:
         max-file: "3"
 
   webserver:
-    image: apache/airflow:2.4.3
+    build:
+      context: .
     restart: always
     depends_on:
       - mysql
@@ -43,6 +44,7 @@ services:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
+      - ./dbt:/opt/airflow/dbt
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - "8080:8080"
@@ -64,7 +66,8 @@ services:
         max-file: "3"
 
   scheduler:
-    image: apache/airflow:2.4.3
+    build:
+      context: .
     restart: always
     depends_on:
       - mysql
@@ -75,6 +78,7 @@ services:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
+      - ./dbt:/opt/airflow/dbt
       - /var/run/docker.sock:/var/run/docker.sock
     command: scheduler
     deploy:
