@@ -1,9 +1,9 @@
 version: '3.7'
 
 services:
-  postgres:
+  postgres_secondary:  # Nome do serviço alterado
     image: postgres:latest
-    container_name: postgres
+    container_name: postgres_secondary  # Nome do contêiner alterado
     environment:
       POSTGRES_PASSWORD: postgres015
       POSTGRES_USER: postgres
@@ -11,7 +11,7 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
     ports:
-      - "5432:5432"
+      - "5433:5432"  # Mapeando a porta 5433 do host para a porta 5432 do contêiner
     restart: always
     deploy:
       resources:
