@@ -1,15 +1,18 @@
 #!/bin/bash
 
+# Remover Docker e Docker Compose existentes
+sudo apt-get remove -y docker docker-engine docker.io containerd runc docker-compose
+
 # Atualizar o índice de pacotes
 sudo apt-get update
 
 # Instalar pacotes necessários para permitir o uso de repositórios via HTTPS
-sudo apt-get install \
+sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
     gnupg \
-    lsb-release -y
+    lsb-release
 
 # Adicionar a chave GPG oficial do Docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -23,7 +26,11 @@ echo \
 sudo apt-get update
 
 # Instalar o Docker Engine
-sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+
+# Iniciar e habilitar o serviço Docker
+sudo systemctl enable docker
+sudo systemctl start docker
 
 # Adicionar o usuário atual ao grupo "docker" para permitir o uso de Docker sem sudo
 sudo usermod -aG docker $USER
