@@ -283,6 +283,7 @@ Essa stack nível 3, composta por ferramentas especializadas, proporciona uma in
 - [Projeto Athena - Aula 08 - DBT - Conceito](https://youtu.be/88AwUUfRKUc)
 - [Projeto Athena - Aula 09 - DBT - Hands-on](https://youtu.be/A3sW5-c-wGI)
 - [Projeto Athena - Aula 10 - Metabase - Hands-on](https://youtu.be/ScFZoQv0Agw)
+- [Projeto Athena - Aula 10 - Finalização e Dicas](https://youtu.be/NgTORI9KUaA)
 
 ### Obrigado por apreciar o material, ajudem compartilhando e disseminando esse conhecimento. 
 
