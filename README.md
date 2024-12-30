@@ -1,6 +1,6 @@
 # Projeto Athena - Evolução de uma Stack de Dados 🧙‍♂️
 
-Série completa aqui: https://www.udemy.com/course/projeto-athena-construindo-e-evoluindo-stacks-de-dados/?referralCode=0D30109D4DF20FAEC128
+[Série completa aqui](https://www.udemy.com/course/projeto-athena-construindo-e-evoluindo-stacks-de-dados/?referralCode=0D30109D4DF20FAEC128)
 Cupom Free: 2C6F2CDF5396A6D3E564
 
 ## Menu
