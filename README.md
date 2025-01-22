@@ -1,7 +1,6 @@
 # Projeto Athena - Evolução de uma Stack de Dados 🧙‍♂️
 
 [Série completa aqui](https://www.udemy.com/course/projeto-athena-construindo-e-evoluindo-stacks-de-dados/?referralCode=0D30109D4DF20FAEC128)
-Cupom Free: 2C6F2CDF5396A6D3E564
 
 ## Menu
 
@@ -102,7 +101,7 @@ A stack de dados evoluída possui várias vantagens em relação a stack de dado
 
 ### Arquivos - Nível 1
 
-[baixar](https://mega.nz/file/wUdFDZbC#DH4JwgEpiLU_ohbJh2vrkkQL6E4deaVZciPa8PJiuns)
+[Base de dados de Exemplo](https://www.kaggle.com/datasets/cleveranjosqlik/csv-northwind-database)
 
 ### Conclusão - Nível 1
 
