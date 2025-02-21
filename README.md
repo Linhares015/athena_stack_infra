@@ -91,13 +91,14 @@ A stack de dados evoluída possui várias vantagens em relação a stack de dado
 [Topo ⤴︎](#menu)
 
 - [Projeto Athena - Aula 01 - Introdução](https://youtu.be/d9yKAGrFB10)
-- [Projeto Athena - Aula 02 - Instalação](https://youtu.be/2lVmmqdGxNU)
-- [Projeto Athena - Aula 03 - Extração - Conceito](https://youtu.be/d_slBFnIJKw)
-- [Projeto Athena - Aula 04 - Extração - Hands On](https://youtu.be/SGiIFvzNEvU)
-- [Projeto Athena - Aula 05 - Staging - Hands On](https://youtu.be/Wll9ssdWLAA)
-- [Projeto Athena - Aula 06 - Marts - Conceito](https://youtu.be/VKei-c16f0Y)
-- [Projeto Athena - Aula 07 - Marts - Hands On](https://youtu.be/ln4Yx_XMjZc)
-- [Projeto Athena - Aula 08 - Finalização](https://youtu.be/_7cb6J5ERvM)
+- **As demais aulas foram migradas para a [Udemy](https://www.udemy.com/course/projeto-athena-construindo-e-evoluindo-stacks-de-dados/?referralCode=0D30109D4DF20FAEC128 )**
+- Projeto Athena - Aula 02 - Instalação
+- Projeto Athena - Aula 03 - Extração - Conceito
+- Projeto Athena - Aula 04 - Extração - Hands On
+- Projeto Athena - Aula 05 - Staging - Hands On
+- Projeto Athena - Aula 06 - Marts - Conceito
+- Projeto Athena - Aula 07 - Marts - Hands On
+- Projeto Athena - Aula 08 - Finalização
 
 ### Arquivos - Nível 1
 
@@ -168,13 +169,14 @@ A stack de dados evoluída nível 2 possui várias vantagens em relação a stac
 [Topo ⤴︎](#menu)
 
 - [Projeto Athena - Aula 01 - Introdução](https://youtu.be/GV0RuKpsrz4)
-- [Projeto Athena - Aula 02 - GIT - Conceito](https://youtu.be/uQGesECRz4k)
-- [Projeto Athena - Aula 03 - GIT - Hands On](https://youtu.be/SeYgS_TdUm8)
-- [Projeto Athena - Aula 04 - Linux - Conceito](https://youtu.be/FTtCw71mqug)
-- [Projeto Athena - Aula 05 - Docker - Conceito](https://youtu.be/7Z9Z9Z9Z9Z9)
-- [Projeto Athena - Aula 06 - Mudança DW - Hands On](https://youtu.be/c-fWxciQTEY)
-- [Projeto Athena - Aula 07 - Mudança ETL - Hands On](https://youtu.be/ZuzIGuu911Y)
-- [Projeto Athena - Aula 08 - Finalização](https://youtu.be/wZHAdewwsSs)
+- **As demais aulas foram migradas para a [Udemy](https://www.udemy.com/course/projeto-athena-construindo-e-evoluindo-stacks-de-dados/?referralCode=0D30109D4DF20FAEC128 )**
+- Projeto Athena - Aula 02 - GIT - Conceito
+- Projeto Athena - Aula 03 - GIT - Hands On
+- Projeto Athena - Aula 04 - Linux - Conceito
+- Projeto Athena - Aula 05 - Docker - Conceito
+- Projeto Athena - Aula 06 - Mudança DW - Hands On
+- Projeto Athena - Aula 07 - Mudança ETL - Hands On
+- Projeto Athena - Aula 08 - Finalização
 
 ### Conclusão - Nível 2
 
@@ -276,18 +278,19 @@ Essa stack nível 3, composta por ferramentas especializadas, proporciona uma in
 [Topo ⤴︎](#menu)
 
 - [Projeto Athena - Aula 01 - Introdução](https://youtu.be/2neuQg14VTA)
-- [Projeto Athena - Aula 02 - ETL x ELT - Conceito](https://youtu.be/D-7u0iog5QE)
-- [Projeto Athena - Aula 03 - Formas de Subir Containers - DockerFile - DockerCompose - Conceito](https://youtu.be/TheuhCxI6Xc)
-- [Projeto Athena - Aula 04 - Monitoramento e Observabilidade - Hands-on](https://youtu.be/LjEoYAidIg4)
-- [Projeto Athena - Aula 05 - Postgres DW - Hands-on](https://youtu.be/8yQDuqEDRso)
-- [Projeto Athena - Aula 06 - Airbyte - Hands-on](https://youtu.be/6eJHICPH8VU)
-- [Projeto Athena - Aula 07 - Apache Airflow - Hands-on](https://youtu.be/a-b7eZi5BTM)
-- [Projeto Athena - Aula 08 - DBT - Conceito](https://youtu.be/88AwUUfRKUc)
-- [Projeto Athena - Aula 09 - DBT - Hands-on](https://youtu.be/A3sW5-c-wGI)
-- [Projeto Athena - Aula 10 - Metabase - Hands-on](https://youtu.be/ScFZoQv0Agw)
-- [Projeto Athena - Aula 10 - Finalização e Dicas](https://youtu.be/NgTORI9KUaA)
+- **As demais aulas foram migradas para a [Udemy](https://www.udemy.com/course/projeto-athena-construindo-e-evoluindo-stacks-de-dados/?referralCode=0D30109D4DF20FAEC128 )**
+- Projeto Athena - Aula 02 - ETL x ELT - Conceito
+- Projeto Athena - Aula 03 - Formas de Subir Containers - DockerFile - DockerCompose - Conceito
+- Projeto Athena - Aula 04 - Monitoramento e Observabilidade - Hands-on
+- Projeto Athena - Aula 05 - Postgres DW - Hands-on
+- Projeto Athena - Aula 06 - Airbyte - Hands-on
+- Projeto Athena - Aula 07 - Apache Airflow - Hands-on
+- Projeto Athena - Aula 08 - DBT - Conceito
+- Projeto Athena - Aula 09 - DBT - Hands-on
+- Projeto Athena - Aula 10 - Metabase - Hands-on
+- Projeto Athena - Aula 10 - Finalização e Dicas
 
-### Obrigado por apreciar o material, ajudem compartilhando e disseminando esse conhecimento. 
+### Obrigado por apreciar o material, ajudem compartilhando e disseminando esse conhecimento.
 
 Selo:
 
