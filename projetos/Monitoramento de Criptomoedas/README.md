@@ -4,6 +4,14 @@ Este projeto cria um pipeline de dados para monitoramento e análise de preços 
 
 Os dados são `coletados`, `transformados`, `armazenados` e `visualizados` em um painel de Business Intelligence (BI).
 
+## Pré-requisitos
+
+Para reproduzir o pipeline localmente é necessário ter o **Docker** instalado. No repositório principal há scripts e arquivos de configuração dentro de `../infra/docker/prd` que auxiliam na criação dos containers de apoio (Postgres, Airflow, Metabase, etc.).
+
+1. Execute o script [`install_docker.sh`](../../infra/docker/prd/server_linux/install_docker.sh) em sistemas Linux para instalar o Docker.
+2. Em seguida inicie os serviços desejados com `docker-compose` nos diretórios correspondentes dentro de `infra/docker/prd`.
+
+
 ## Arquitetura do Projeto
 
 ```mermaid
