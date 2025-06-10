@@ -18,14 +18,15 @@ fi
 # Obter informações da rede atual
 CURRENT_IP=$(ip -o -4 addr list $INTERFACE | awk '{print $4}' | cut -d/ -f1)
 GATEWAY=$(ip -4 route | grep default | awk '{print $3}')
-DNS_SERVERS="8.8.8.8, 8.8.4.4"  # Usando DNS público do Google
+# Servidores DNS em formato de lista para o netplan
+DNS_SERVERS=("8.8.8.8" "8.8.4.4")  # Usando DNS público do Google
 
 # Determinar o novo endereço IP estático (adicionando 1 ao último octeto)
 IFS='.' read -r i1 i2 i3 i4 <<< "$CURRENT_IP"
 STATIC_IP="$i1.$i2.$i3.$((i4 + 1))"
 
 # Configurar IP estático
-cat <<EOF | sudo tee /etc/netplan/01-netcfg.yaml
+  cat <<EOF | sudo tee /etc/netplan/01-netcfg.yaml
 network:
   version: 2
   ethernets:
@@ -35,7 +36,7 @@ network:
       gateway4: $GATEWAY
       nameservers:
         addresses:
-          - $DNS_SERVERS
+$(printf '          - %s\n' "${DNS_SERVERS[@]}")
 EOF
 
 # Aplicar as configurações de rede
