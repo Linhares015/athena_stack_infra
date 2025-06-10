@@ -12,7 +12,23 @@
 - [Aulas do Projeto Athena | N2 | YouTube](#aulas-do-projeto-athena--n2--youtube)
 - [Stack de Dados Evoluída - Nivel 3](#stack-de-dados-evoluída---nivel-3)
 - [Aulas do Projeto Athena | N3 | YouTube](#aulas-do-projeto-athena--n3--youtube)
+- [Como usar](#como-usar)
+- [Projeto Monitoramento de Criptomoedas](projetos/Monitoramento%20de%20Criptomoedas/README.md)
 
+## Como usar
+
+Este repositório contém diversos exemplos de infraestrutura para montar uma stack de dados completa com Docker.
+Para executar os serviços localmente você precisa do **Docker** e do **Docker Compose** instalados.
+
+1. Em sistemas Ubuntu, utilize o script [`install_docker.sh`](infra/docker/prd/server_linux/install_docker.sh) para realizar a instalação automática.
+2. Escolha um serviço dentro da pasta [`infra/docker/prd`](infra/docker/prd/) e execute o `docker-compose` correspondente:
+
+```bash
+cd infra/docker/prd/postgres_dw
+docker-compose up -d
+```
+
+A estrutura dessa pasta também inclui exemplos para Metabase, Airflow, monitoramento e outras ferramentas.
 
 ## Ciclo de vida da Engenharia de Dados
 
